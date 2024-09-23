@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="top"
+    android:gravity="center"
+    android:padding="2dp"
+    android:layout_margin="2dp"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:font="@font/nunito_regular"
+                        android:text="Francis"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edit_text_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:font="@font/nunito_regular"
+                        android:hint="xxx-xxxx-xxxx"
+                        android:inputType="phone"
+                        android:textSize="20dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:entries="@array/dineline"
+                        android:font="@font/nunito_regular" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="150sp"
+                    android:layout_height="150sp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cat" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="100sp"
+                android:layout_height="3dp"
+                android:layout_margin="5dp"
+                android:background="@color/grey"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:font="@font/nunito_regular"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/location">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/setting"></ImageView>
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/payment"></ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:font="@font/nunito_regular"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="top|center"
+                        android:layout_weight="1"
+                        android:font="@font/nunito_regular"
+                        android:gravity="top|center"
+                        android:text="   Address"></TextView>
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="top|center"
+                        android:layout_weight="1"
+                        android:gravity="top|center"
+                        android:text="Settings"></TextView>
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="top|center"
+                        android:layout_weight="1"
+                        android:gravity="top|center"
+                        android:text="Payment"></TextView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="100sp"
+                android:layout_height="3dp"
+                android:layout_margin="5dp"
+                android:background="@color/grey"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:font="@font/nunito_regular"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="start"
+                    android:gravity="center"
+                    android:paddingLeft="40dp"
+                    android:text="Kooc Order"
+                    android:textColor="@color/yellow"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/editbook"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:text="New Booking"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ongoing"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:text="Your Ongoing Books"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:paddingLeft="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/baseline_menu_book_24"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:text="Your Bookings"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:font="@font/nunito_regular"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="start"
+                    android:gravity="center"
+                    android:paddingLeft="40dp"
+                    android:text="Kooc Monthly"
+                    android:textColor="@color/yellow"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/plan"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:text="Your Week"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/edit"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:text="Plan Next Week"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:paddingLeft="40dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/renew"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:text="Renew Subscription"
+                        android:textSize="15dp"></TextView>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/color"
+                        android:gravity="center"
+                        android:text="12 days more"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/favorite">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/home"></ImageView>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/update"></ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="top|center"
+                        android:layout_weight="1"
+                        android:gravity="top|center"
+                        android:text="   Favorites"></TextView>
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top|center"
+                        android:layout_weight="1"
+                        android:gravity="top|center"
+                        android:text="Home"></TextView>
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="top|center"
+                        android:layout_weight="1"
+                        android:gravity="top|center"
+                        android:text="Updates"></TextView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
